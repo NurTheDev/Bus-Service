@@ -1,3 +1,26 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  /* Neutral Colors */
+  --gray-50: #f7f8f8;
+  --gray-900: #030712;
+  --black: #000000;
+  --white: #ffffff;
+
+  /* Primary Colors */
+  --green-primary: #1dd100;
+
+  /* Gradients */
+  --gradient-light: linear-gradient(180deg, #030712 50%, #000000 0%);
+  --gradient-accent: linear-gradient(
+    180deg,
+    #1dd100 40%,
+    #1dd100 15%,
+    #1dd100 10%
+  );
+}
+@layer base {
+  @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+}
