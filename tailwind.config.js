@@ -1,30 +1,37 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./**/*.{html,js}"],
+  content: ["*"],
   theme: {
+    fontSize: {
+      sm: "var(--font-sm)",
+      base: "var(--font-base)",
+      md: "var(--font-md)",
+      lg: "var(--font-lg)",
+      xl: "var(--heading)",
+      "2xl": "var(--heading-2xl)",
+      "3xl": "var(--heading-3xl)",
+      "4xl": "var(--heading-4xl)",
+      "5xl": "var(--heading-5xl)",
+    },
+    fontFamily: {
+      Railway: "var(--font-railway)",
+      Inter: "var(--font-inter)",
+    },
     extend: {
+      backgroundImage: {
+        heroBanner: "url(src/images/banner.png)",
+      },
       colors: {
-        /* Neutral Colors */
-        gray: {
-          50: "#F7F8F8",
-          900: "#030712",
-        },
-        black: "#000000",
-        white: "#FFFFFF",
-
-        /* Primary Colors */
-        green: {
-          primary: "#1DD100",
-        },
-        blue: {
-          primary: "#4285F4",
-        },
-        red: {
-          primary: "#EA4335",
-        },
-        yellow: {
-          primary: "#FFBC04",
-        },
+        primaryColor: "var(--color-primary)",
+        secondaryColor: "var(--color-secondary)",
+        secondaryColor60: "var(--color-secondary-60)",
+        secondaryColor80: "var(--color-secondary-80)",
+        secondaryColor30: "var(--color-secondary-30)",
+        secondaryColor10: "var(--color-secondary-10)",
+        accentColor: "var(--color-accent)",
+        primaryColorOpacity10: "var(--color-primary-opacity-10)",
+        primaryColorOpacity40: "var(--color-primary-opacity-40)",
+        whiteColor: "var(--white)",
       },
       gradientColorStops: (theme) => ({
         ...theme("colors"),
