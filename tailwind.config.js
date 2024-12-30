@@ -32,6 +32,7 @@ module.exports = {
         primaryColorOpacity10: "var(--color-primary-opacity-10)",
         primaryColorOpacity40: "var(--color-primary-opacity-40)",
         whiteColor: "var(--white)",
+        whiteColor50: "var(--white50)",
       },
       gradientColorStops: (theme) => ({
         ...theme("colors"),

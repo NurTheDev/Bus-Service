@@ -374,7 +374,7 @@
         class="container mx-auto bg-white lg:grid lg:grid-cols-12 lg:mt-10 px-8 py-8 rounded-tl-3xl rounded-tr-3xl"
       >
         <div
-          class="col-span-7 border-r-2 border-secondaryColor30 border-dashed pr-8"
+          class="col-span-7 lg:border-r-2 lg:border-secondaryColor30 border-dashed pr-8"
         >
           <h3
             class="text-secondaryColor font-Railway font-semibold text-xl py-6 border-b-2 border-secondaryColor10 border-dashed"
@@ -391,8 +391,8 @@
               <span><i class="fa-regular fa-loveseat"></i></span>Selected
             </p>
           </div>
-          <div class="grid grid-cols-12 gap-x-16 py-8">
-            <div class="col-span-7 flex gap-x-4 mt-24">
+          <div class="grid xl:grid-cols-12 gap-x-16 py-8">
+            <div class="col-span-7 flex gap-x-4 mt-10 lg:mt-24">
               <div class="grid grid-cols-1 gap-4 justify-center items-center">
                 <div
                   class="text-secondaryColor60 text-md font-medium font-Inter"
@@ -775,5 +775,43 @@
         </div>
       </section>
     </main>
+    <footer class="bg-secondaryColor">
+      <section class="container mx-auto py-32">
+        <div class="flex justify-between items-center gap-x-4">
+          <div>
+            <h2 class="text-whiteColor font-Railway font-extrabold text-3xl">
+              P-Ticket
+            </h2>
+            <p class="text-whiteColor font-Inter font-normal text-md lg:w-4/6">
+              P-Ticket is a digital platform to make your daily commuting
+              better.
+            </p>
+          </div>
+          <div>
+            <p
+              class="text-whiteColor text-lg font-Railway font-semibold flex mb-4"
+            >
+              Download our app
+            </p>
+            <img
+              src="src/images/playstore.svg"
+              alt="src/images/playstore.svg"
+            />
+          </div>
+        </div>
+        <div
+          class="flex justify-between items-center mt-20 border-t border-whiteColor50 border-dashed py-8"
+        >
+          <p class="text-whiteColor50">
+            @all rights reserved, P-Ticket services limited.2024
+          </p>
+          <ul class="flex text-whiteColor gap-x-4">
+            <li>Terms & condition</li>
+            <li>Return & refund policy</li>
+            <li>Privacy policy</li>
+          </ul>
+        </div>
+      </section>
+    </footer>
   </body>
 </html>
