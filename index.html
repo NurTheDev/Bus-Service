@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en" data-theme="light" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -157,6 +157,7 @@
           app. The integrated testing features allow for a streamlined .
         </p>
         <button
+          onclick="document.getElementById('buyTicket').scrollIntoView()"
           class="btn bg-primaryColor border-none btn-xs sm:btn-sm md:btn-md lg:btn-lg hover:bg-primaryColorOpacity40 hover:text-whiteColor"
         >
           Buy Tickets
@@ -224,7 +225,10 @@
             </p>
           </div>
           <div>
-            <h3 class="text-2xl font-Railway font-bold text-secondaryColor">
+            <h3
+              id="new15"
+              class="text-2xl font-Railway font-bold text-secondaryColor cursor-pointer"
+            >
               NEW15
             </h3>
             <p class="font-Inter text-secondaryColor60 text-md font-medium">
@@ -244,7 +248,7 @@
             <h3
               class="text-3xl lg:text-4xl font-black font-Inter text-secondaryColor80"
             >
-              15% OFF
+              20% OFF
             </h3>
             <p class="text-secondaryColor80 font-Inter text-lg font-semibold">
               on your next purchase
@@ -254,8 +258,11 @@
             </p>
           </div>
           <div>
-            <h3 class="text-2xl font-Railway font-bold text-secondaryColor">
-              NEW15
+            <h3
+              id="couple20"
+              class="text-2xl font-Railway font-bold text-secondaryColor cursor-pointer"
+            >
+              Couple 20
             </h3>
             <p class="font-Inter text-secondaryColor60 text-md font-medium">
               Coupon Code
@@ -291,6 +298,7 @@
         </p>
       </div>
       <section
+        id="buyTicket"
         class="container mx-auto bg-whiteColor rounded-3xl py-8 relative mt-10 flex flex-col lg:flex-row justify-around items-center"
       >
         <div class="flex flex-col">
@@ -311,10 +319,10 @@
               </div>
             </div>
             <div
-              class="text-md p-4 font-Railway font-bold text-primaryColor bg-primaryColorOpacity10 rounded-xl"
+              class="text-md p-4 font-Railway font-bold text-primaryColor bg-primaryColorOpacity10 rounded-xl flex gap-x-2"
             >
-              <span><i class="fa-regular fa-loveseat"></i></span>
-              <span>40 Seats left</span>
+              <span><i class="fa-regular fa-loveseat cursor-pointer"></i></span>
+              <p><span id="seatLeft">40</span> Seats left</p>
             </div>
           </div>
           <div class="p-8 bg-accentColor rounded-3xl space-y-2 mt-6">
@@ -385,10 +393,12 @@
             class="flex justify-between items-center mt-4 border-b-2 border-secondaryColor10 border-dashed py-5"
           >
             <p class="flex gap-x-2 text-secondaryColor60 text-md font-medium">
-              <span><i class="fa-regular fa-loveseat"></i></span>Available
+              <span><i class="fa-regular fa-loveseat cursor-pointer"></i></span
+              >Available
             </p>
             <p class="flex gap-x-2 text-primaryColor text-md font-medium">
-              <span><i class="fa-regular fa-loveseat"></i></span>Selected
+              <span><i class="fa-regular fa-loveseat cursor-pointer"></i></span
+              >Selected
             </p>
           </div>
           <div class="grid xl:grid-cols-12 gap-x-16 py-8">
@@ -447,27 +457,27 @@
               </div>
               <div class="grid grid-cols-2 flex-1 gap-8">
                 <div
-                  class="text-center py-4 px-11 bg-accentColor rounded-xl text-secondaryColor60 text-md font-medium font-Inter hover:bg-primaryColor hover:text-whiteColor"
+                  class="seat cursor-pointer text-center py-4 px-11 bg-accentColor rounded-xl text-secondaryColor60 text-md font-medium font-Inter hover:bg-primaryColor hover:text-whiteColor"
                 >
                   A1
                 </div>
                 <div
-                  class="text-center py-4 px-11 bg-accentColor rounded-xl text-secondaryColor60 text-md font-medium font-Inter hover:bg-primaryColor hover:text-whiteColor"
+                  class="seat cursor-pointer text-center py-4 px-11 bg-accentColor rounded-xl text-secondaryColor60 text-md font-medium font-Inter hover:bg-primaryColor hover:text-whiteColor"
                 >
                   A2
                 </div>
                 <div
-                  class="text-center py-4 px-11 bg-accentColor rounded-xl text-secondaryColor60 text-md font-medium font-Inter hover:bg-primaryColor hover:text-whiteColor"
+                  class="seat cursor-pointer text-center py-4 px-11 bg-accentColor rounded-xl text-secondaryColor60 text-md font-medium font-Inter hover:bg-primaryColor hover:text-whiteColor"
                 >
                   B1
                 </div>
                 <div
-                  class="text-center py-4 px-11 bg-accentColor rounded-xl text-secondaryColor60 text-md font-medium font-Inter hover:bg-primaryColor hover:text-whiteColor"
+                  class="seat cursor-pointer text-center py-4 px-11 bg-accentColor rounded-xl text-secondaryColor60 text-md font-medium font-Inter hover:bg-primaryColor hover:text-whiteColor"
                 >
                   B2
                 </div>
                 <div
-                  class="text-center py-4 px-11 bg-accentColor rounded-xl text-secondaryColor60 text-md font-medium font-Inter hover:bg-primaryColor hover:text-whiteColor"
+                  class="seat cursor-pointer text-center py-4 px-11 bg-accentColor rounded-xl text-secondaryColor60 text-md font-medium font-Inter hover:bg-primaryColor hover:text-whiteColor"
                 >
                   C1
                 </div>
@@ -477,72 +487,72 @@
                   C2
                 </div>
                 <div
-                  class="text-center py-4 px-11 bg-accentColor rounded-xl text-secondaryColor60 text-md font-medium font-Inter hover:bg-primaryColor hover:text-whiteColor"
+                  class="seat cursor-pointer text-center py-4 px-11 bg-accentColor rounded-xl text-secondaryColor60 text-md font-medium font-Inter hover:bg-primaryColor hover:text-whiteColor"
                 >
                   D1
                 </div>
                 <div
-                  class="text-center py-4 px-11 bg-accentColor rounded-xl text-secondaryColor60 text-md font-medium font-Inter hover:bg-primaryColor hover:text-whiteColor"
+                  class="seat cursor-pointer text-center py-4 px-11 bg-accentColor rounded-xl text-secondaryColor60 text-md font-medium font-Inter hover:bg-primaryColor hover:text-whiteColor"
                 >
                   D2
                 </div>
                 <div
-                  class="text-center py-4 px-11 bg-accentColor rounded-xl text-secondaryColor60 text-md font-medium font-Inter hover:bg-primaryColor hover:text-whiteColor"
+                  class="seat cursor-pointer text-center py-4 px-11 bg-accentColor rounded-xl text-secondaryColor60 text-md font-medium font-Inter hover:bg-primaryColor hover:text-whiteColor"
                 >
                   E1
                 </div>
                 <div
-                  class="text-center py-4 px-11 bg-accentColor rounded-xl text-secondaryColor60 text-md font-medium font-Inter hover:bg-primaryColor hover:text-whiteColor"
+                  class="seat cursor-pointer text-center py-4 px-11 bg-accentColor rounded-xl text-secondaryColor60 text-md font-medium font-Inter hover:bg-primaryColor hover:text-whiteColor"
                 >
                   E2
                 </div>
                 <div
-                  class="text-center py-4 px-11 bg-accentColor rounded-xl text-secondaryColor60 text-md font-medium font-Inter hover:bg-primaryColor hover:text-whiteColor"
+                  class="seat cursor-pointer text-center py-4 px-11 bg-accentColor rounded-xl text-secondaryColor60 text-md font-medium font-Inter hover:bg-primaryColor hover:text-whiteColor"
                 >
                   F1
                 </div>
                 <div
-                  class="text-center py-4 px-11 bg-accentColor rounded-xl text-secondaryColor60 text-md font-medium font-Inter hover:bg-primaryColor hover:text-whiteColor"
+                  class="seat cursor-pointer text-center py-4 px-11 bg-accentColor rounded-xl text-secondaryColor60 text-md font-medium font-Inter hover:bg-primaryColor hover:text-whiteColor"
                 >
                   F2
                 </div>
                 <div
-                  class="text-center py-4 px-11 bg-accentColor rounded-xl text-secondaryColor60 text-md font-medium font-Inter hover:bg-primaryColor hover:text-whiteColor"
+                  class="seat cursor-pointer text-center py-4 px-11 bg-accentColor rounded-xl text-secondaryColor60 text-md font-medium font-Inter hover:bg-primaryColor hover:text-whiteColor"
                 >
                   G1
                 </div>
                 <div
-                  class="text-center py-4 px-11 bg-accentColor rounded-xl text-secondaryColor60 text-md font-medium font-Inter hover:bg-primaryColor hover:text-whiteColor"
+                  class="seat cursor-pointer text-center py-4 px-11 bg-accentColor rounded-xl text-secondaryColor60 text-md font-medium font-Inter hover:bg-primaryColor hover:text-whiteColor"
                 >
                   G2
                 </div>
                 <div
-                  class="text-center py-4 px-11 bg-accentColor rounded-xl text-secondaryColor60 text-md font-medium font-Inter hover:bg-primaryColor hover:text-whiteColor"
+                  class="seat cursor-pointer text-center py-4 px-11 bg-accentColor rounded-xl text-secondaryColor60 text-md font-medium font-Inter hover:bg-primaryColor hover:text-whiteColor"
                 >
                   H1
                 </div>
                 <div
-                  class="text-center py-4 px-11 bg-accentColor rounded-xl text-secondaryColor60 text-md font-medium font-Inter hover:bg-primaryColor hover:text-whiteColor"
+                  class="seat cursor-pointer text-center py-4 px-11 bg-accentColor rounded-xl text-secondaryColor60 text-md font-medium font-Inter hover:bg-primaryColor hover:text-whiteColor"
                 >
                   H2
                 </div>
                 <div
-                  class="text-center py-4 px-11 bg-accentColor rounded-xl text-secondaryColor60 text-md font-medium font-Inter hover:bg-primaryColor hover:text-whiteColor"
+                  class="seat cursor-pointer text-center py-4 px-11 bg-accentColor rounded-xl text-secondaryColor60 text-md font-medium font-Inter hover:bg-primaryColor hover:text-whiteColor"
                 >
                   I1
                 </div>
                 <div
-                  class="text-center py-4 px-11 bg-accentColor rounded-xl text-secondaryColor60 text-md font-medium font-Inter hover:bg-primaryColor hover:text-whiteColor"
+                  class="seat cursor-pointer text-center py-4 px-11 bg-accentColor rounded-xl text-secondaryColor60 text-md font-medium font-Inter hover:bg-primaryColor hover:text-whiteColor"
                 >
                   I2
                 </div>
                 <div
-                  class="text-center py-4 px-11 bg-accentColor rounded-xl text-secondaryColor60 text-md font-medium font-Inter hover:bg-primaryColor hover:text-whiteColor"
+                  class="seat cursor-pointer text-center py-4 px-11 bg-accentColor rounded-xl text-secondaryColor60 text-md font-medium font-Inter hover:bg-primaryColor hover:text-whiteColor"
                 >
                   J1
                 </div>
                 <div
-                  class="text-center py-4 px-11 bg-accentColor rounded-xl text-secondaryColor60 text-md font-medium font-Inter hover:bg-primaryColor hover:text-whiteColor"
+                  class="seat cursor-pointer text-center py-4 px-11 bg-accentColor rounded-xl text-secondaryColor60 text-md font-medium font-Inter hover:bg-primaryColor hover:text-whiteColor"
                 >
                   J2
                 </div>
@@ -559,102 +569,102 @@
                   ></span>
                 </div>
                 <div
-                  class="text-center py-4 px-11 bg-accentColor rounded-xl text-secondaryColor60 text-md font-medium font-Inter hover:bg-primaryColor hover:text-whiteColor"
+                  class="seat cursor-pointer text-center py-4 px-11 bg-accentColor rounded-xl text-secondaryColor60 text-md font-medium font-Inter hover:bg-primaryColor hover:text-whiteColor"
                 >
                   A3
                 </div>
                 <div
-                  class="text-center py-4 px-11 bg-accentColor rounded-xl text-secondaryColor60 text-md font-medium font-Inter hover:bg-primaryColor hover:text-whiteColor"
+                  class="seat cursor-pointer text-center py-4 px-11 bg-accentColor rounded-xl text-secondaryColor60 text-md font-medium font-Inter hover:bg-primaryColor hover:text-whiteColor"
                 >
                   A4
                 </div>
                 <div
-                  class="text-center py-4 px-11 bg-accentColor rounded-xl text-secondaryColor60 text-md font-medium font-Inter hover:bg-primaryColor hover:text-whiteColor"
+                  class="seat cursor-pointer text-center py-4 px-11 bg-accentColor rounded-xl text-secondaryColor60 text-md font-medium font-Inter hover:bg-primaryColor hover:text-whiteColor"
                 >
                   B3
                 </div>
                 <div
-                  class="text-center py-4 px-11 bg-accentColor rounded-xl text-secondaryColor60 text-md font-medium font-Inter hover:bg-primaryColor hover:text-whiteColor"
+                  class="seat cursor-pointer text-center py-4 px-11 bg-accentColor rounded-xl text-secondaryColor60 text-md font-medium font-Inter hover:bg-primaryColor hover:text-whiteColor"
                 >
                   B4
                 </div>
                 <div
-                  class="text-center py-4 px-11 bg-accentColor rounded-xl text-secondaryColor60 text-md font-medium font-Inter hover:bg-primaryColor hover:text-whiteColor"
+                  class="seat cursor-pointer text-center py-4 px-11 bg-accentColor rounded-xl text-secondaryColor60 text-md font-medium font-Inter hover:bg-primaryColor hover:text-whiteColor"
                 >
                   C3
                 </div>
                 <div
-                  class="text-center py-4 px-11 bg-accentColor rounded-xl text-secondaryColor60 text-md font-medium font-Inter hover:bg-primaryColor hover:text-whiteColor"
+                  class="seat cursor-pointer text-center py-4 px-11 bg-accentColor rounded-xl text-secondaryColor60 text-md font-medium font-Inter hover:bg-primaryColor hover:text-whiteColor"
                 >
                   C4
                 </div>
                 <div
-                  class="text-center py-4 px-11 bg-accentColor rounded-xl text-secondaryColor60 text-md font-medium font-Inter hover:bg-primaryColor hover:text-whiteColor"
+                  class="seat cursor-pointer text-center py-4 px-11 bg-accentColor rounded-xl text-secondaryColor60 text-md font-medium font-Inter hover:bg-primaryColor hover:text-whiteColor"
                 >
                   D3
                 </div>
                 <div
-                  class="text-center py-4 px-11 bg-accentColor rounded-xl text-secondaryColor60 text-md font-medium font-Inter hover:bg-primaryColor hover:text-whiteColor"
+                  class="seat cursor-pointer text-center py-4 px-11 bg-accentColor rounded-xl text-secondaryColor60 text-md font-medium font-Inter hover:bg-primaryColor hover:text-whiteColor"
                 >
                   D4
                 </div>
                 <div
-                  class="text-center py-4 px-11 bg-accentColor rounded-xl text-secondaryColor60 text-md font-medium font-Inter hover:bg-primaryColor hover:text-whiteColor"
+                  class="seat cursor-pointer text-center py-4 px-11 bg-accentColor rounded-xl text-secondaryColor60 text-md font-medium font-Inter hover:bg-primaryColor hover:text-whiteColor"
                 >
                   E3
                 </div>
                 <div
-                  class="text-center py-4 px-11 bg-accentColor rounded-xl text-secondaryColor60 text-md font-medium font-Inter hover:bg-primaryColor hover:text-whiteColor"
+                  class="seat cursor-pointer text-center py-4 px-11 bg-accentColor rounded-xl text-secondaryColor60 text-md font-medium font-Inter hover:bg-primaryColor hover:text-whiteColor"
                 >
                   E4
                 </div>
                 <div
-                  class="text-center py-4 px-11 bg-accentColor rounded-xl text-secondaryColor60 text-md font-medium font-Inter hover:bg-primaryColor hover:text-whiteColor"
+                  class="seat cursor-pointer text-center py-4 px-11 bg-accentColor rounded-xl text-secondaryColor60 text-md font-medium font-Inter hover:bg-primaryColor hover:text-whiteColor"
                 >
                   F3
                 </div>
                 <div
-                  class="text-center py-4 px-11 bg-accentColor rounded-xl text-secondaryColor60 text-md font-medium font-Inter hover:bg-primaryColor hover:text-whiteColor"
+                  class="seat cursor-pointer text-center py-4 px-11 bg-accentColor rounded-xl text-secondaryColor60 text-md font-medium font-Inter hover:bg-primaryColor hover:text-whiteColor"
                 >
                   F4
                 </div>
                 <div
-                  class="text-center py-4 px-11 bg-accentColor rounded-xl text-secondaryColor60 text-md font-medium font-Inter hover:bg-primaryColor hover:text-whiteColor"
+                  class="seat cursor-pointer text-center py-4 px-11 bg-accentColor rounded-xl text-secondaryColor60 text-md font-medium font-Inter hover:bg-primaryColor hover:text-whiteColor"
                 >
                   G3
                 </div>
                 <div
-                  class="text-center py-4 px-11 bg-accentColor rounded-xl text-secondaryColor60 text-md font-medium font-Inter hover:bg-primaryColor hover:text-whiteColor"
+                  class="seat cursor-pointer text-center py-4 px-11 bg-accentColor rounded-xl text-secondaryColor60 text-md font-medium font-Inter hover:bg-primaryColor hover:text-whiteColor"
                 >
                   G4
                 </div>
                 <div
-                  class="text-center py-4 px-11 bg-accentColor rounded-xl text-secondaryColor60 text-md font-medium font-Inter hover:bg-primaryColor hover:text-whiteColor"
+                  class="seat cursor-pointer text-center py-4 px-11 bg-accentColor rounded-xl text-secondaryColor60 text-md font-medium font-Inter hover:bg-primaryColor hover:text-whiteColor"
                 >
                   H3
                 </div>
                 <div
-                  class="text-center py-4 px-11 bg-accentColor rounded-xl text-secondaryColor60 text-md font-medium font-Inter hover:bg-primaryColor hover:text-whiteColor"
+                  class="seat cursor-pointer text-center py-4 px-11 bg-accentColor rounded-xl text-secondaryColor60 text-md font-medium font-Inter hover:bg-primaryColor hover:text-whiteColor"
                 >
                   H4
                 </div>
                 <div
-                  class="text-center py-4 px-11 bg-accentColor rounded-xl text-secondaryColor60 text-md font-medium font-Inter hover:bg-primaryColor hover:text-whiteColor"
+                  class="seat cursor-pointer text-center py-4 px-11 bg-accentColor rounded-xl text-secondaryColor60 text-md font-medium font-Inter hover:bg-primaryColor hover:text-whiteColor"
                 >
                   I3
                 </div>
                 <div
-                  class="text-center py-4 px-11 bg-accentColor rounded-xl text-secondaryColor60 text-md font-medium font-Inter hover:bg-primaryColor hover:text-whiteColor"
+                  class="seat cursor-pointer text-center py-4 px-11 bg-accentColor rounded-xl text-secondaryColor60 text-md font-medium font-Inter hover:bg-primaryColor hover:text-whiteColor"
                 >
                   I4
                 </div>
                 <div
-                  class="text-center py-4 px-11 bg-accentColor rounded-xl text-secondaryColor60 text-md font-medium font-Inter hover:bg-primaryColor hover:text-whiteColor"
+                  class="seat cursor-pointer text-center py-4 px-11 bg-accentColor rounded-xl text-secondaryColor60 text-md font-medium font-Inter hover:bg-primaryColor hover:text-whiteColor"
                 >
                   J3
                 </div>
                 <div
-                  class="text-center py-4 px-11 bg-accentColor rounded-xl text-secondaryColor60 text-md font-medium font-Inter hover:bg-primaryColor hover:text-whiteColor"
+                  class="seat cursor-pointer text-center py-4 px-11 bg-accentColor rounded-xl text-secondaryColor60 text-md font-medium font-Inter hover:bg-primaryColor hover:text-whiteColor"
                 >
                   J4
                 </div>
@@ -813,5 +823,7 @@
         </div>
       </section>
     </footer>
+    <script src="src/main.js"></script>
+    <script src="src/utility.js"></script>
   </body>
 </html>
