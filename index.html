@@ -699,17 +699,18 @@
               class="flex justify-between items-center gap-x-4 text-secondaryColor font-Inter font-medium text-base py-4"
             >
               <p>Total Price</p>
-              <p>BDT <span id="price"></span></p>
+              <p>BDT <span id="price">0</span></p>
             </div>
             <div class="relative w-full">
               <input
-                id="cuppon"
-                placeholder="Have any copupon?"
+                id="coupon"
+                placeholder="Have any coupon?"
                 type="text"
                 class="py-5 px-6 w-full bg-whiteColor rounded-xl text-sm font-Inter font-normal text-secondaryColor30"
               />
               <button
-                class="bg-primaryColor text-whiteColor py-4 text-base font-Inter font-semibold px-5 rounded-xl border-none absolute right-0 top-0"
+                id="apply"
+                class="bg-primaryColor text-whiteColor py-[18px] text-base font-Inter font-semibold px-5 rounded-xl border-none absolute right-0 bottom-14"
               >
                 Apply
               </button>
@@ -717,7 +718,7 @@
                 class="flex justify-between items-center gap-x-4 text-secondaryColor font-Inter font-medium text-base py-4"
               >
                 <p>Grand Total</p>
-                <p>BDT 1100</p>
+                <p>BDT <span id="grandTotal">0</span></p>
               </div>
             </div>
           </div>

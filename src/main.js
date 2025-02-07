@@ -27,5 +27,6 @@ seat.forEach((seat) => {
     getseatLeft();
     getseatColor(seat);
     getSeatSelected(seat);
+    checkCupon();
   });
 });

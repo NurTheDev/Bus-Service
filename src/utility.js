@@ -3,6 +3,7 @@ const available = document.getElementById("available");
 const seatFinal = document.querySelector("#seatFinal");
 const addedSeat = document.querySelector("#addedSeat");
 const totalPrice = document.querySelector("#price");
+const grandTotal = document.querySelector("#grandTotal");
 
 let getseatLeft = () => {
   let hi = seatLeft.innerText - 1;
@@ -66,4 +67,18 @@ let getSeatSelected = (seat) => {
 const getPrice = (price) => {
   const setPrice = price * 550;
   totalPrice.innerText = setPrice;
+};
+const checkCupon = () => {
+  const coupon = document.getElementById("coupon");
+  const apply = document.getElementById("apply");
+
+  apply.addEventListener("click", () => {
+    if (coupon.value === "NEW15" && totalPrice.innerText >= 2000) {
+      grandTotal.innerText = parseInt(totalPrice.innerText) * 0.85;
+    } else if (coupon.value === "Couple 20" && totalPrice.innerText >= 3000) {
+      grandTotal.innerText = parseInt(totalPrice.innerText) * 0.8;
+    } else {
+      alert("Invalid Coupon Code or Minimum Purchase not met");
+    }
+  });
 };
