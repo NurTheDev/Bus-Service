@@ -394,11 +394,11 @@
           >
             <p class="flex gap-x-2 text-secondaryColor60 text-md font-medium">
               <span><i class="fa-regular fa-loveseat cursor-pointer"></i></span
-              >Available
+              ><span id="available">40</span> Available
             </p>
             <p class="flex gap-x-2 text-primaryColor text-md font-medium">
               <span><i class="fa-regular fa-loveseat cursor-pointer"></i></span
-              >Selected
+              ><span id="selected">0</span> Selected
             </p>
           </div>
           <div class="grid xl:grid-cols-12 gap-x-16 py-8">
@@ -482,7 +482,7 @@
                   C1
                 </div>
                 <div
-                  class="text-center py-4 px-11 bg-accentColor rounded-xl text-secondaryColor60 text-md font-medium font-Inter hover:bg-primaryColor hover:text-whiteColor"
+                  class="seat text-center py-4 px-11 bg-accentColor rounded-xl text-secondaryColor60 text-md font-medium font-Inter hover:bg-primaryColor hover:text-whiteColor"
                 >
                   C2
                 </div>
@@ -684,32 +684,22 @@
             >
               <p>
                 Seat
-                <sup class="bg-primaryColor text-whiteColor px-2 rounded-md"
-                  >2</sup
+                <sup
+                  id="seatFinal"
+                  class="bg-primaryColor text-whiteColor px-2 rounded-md"
+                  >0</sup
                 >
               </p>
               <p>Class</p>
               <p>Price</p>
             </div>
-            <div
-              class="flex justify-between items-center gap-x-4 py-2 mt-2 font-Inter font-normal text-base text-secondaryColor60"
-            >
-              <p>C2</p>
-              <p>Economy</p>
-              <p>550</p>
-            </div>
-            <div
-              class="flex justify-between items-center gap-x-4 py-2 mt-2 font-Inter font-normal text-base text-secondaryColor60 border-b border-secondaryColor10 pb-4"
-            >
-              <p>C2</p>
-              <p>Economy</p>
-              <p>550</p>
-            </div>
+            <div id="addedSeat"></div>
+
             <div
               class="flex justify-between items-center gap-x-4 text-secondaryColor font-Inter font-medium text-base py-4"
             >
               <p>Total Price</p>
-              <p>BDT 1100</p>
+              <p>BDT <span id="price"></span></p>
             </div>
             <div class="relative w-full">
               <input

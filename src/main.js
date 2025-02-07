@@ -26,5 +26,6 @@ seat.forEach((seat) => {
   seat.addEventListener("click", () => {
     getseatLeft();
     getseatColor(seat);
+    getSeatSelected(seat);
   });
 });
